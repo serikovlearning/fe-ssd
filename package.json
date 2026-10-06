@@ -3,10 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@10.26.2",
   "engines": {
-    "node": ">=20.19.0",
-    "pnpm": ">=10"
+    "node": ">=20.19.0"
   },
   "scripts": {
     "dev": "vite",
@@ -15,7 +13,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build",
     "prepare": "lefthook install"
   },
   "dependencies": {
